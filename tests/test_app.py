@@ -22,7 +22,7 @@ class TestRecipes(unittest.TestCase):
         self.assertEqual(data["title"], "Паста карбонара")
         self.assertIn("id", data)
 
-    def test_get_all_recipes(self):
+    def test_get_all_recipes1(self):
         response = self.client.get("/api/recipes/")
         self.assertEqual(response.status_code, 200)
         data = response.json()
