@@ -1,11 +1,12 @@
 from typing import Annotated, List, Type
 
-from app.database import get_session
 from fastapi import APIRouter, Depends, HTTPException
-from app.models import Recipe
 from schemas import RecipeCreate, RecipeDetail, RecipeOut
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
+
+from app.database import get_session
+from app.models import Recipe
 
 router = APIRouter(
     prefix="/api/recipes",
