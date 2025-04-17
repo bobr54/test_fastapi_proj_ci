@@ -49,7 +49,7 @@ class TestRecipes(unittest.TestCase):
         })
         self.assertEqual(response.status_code, 422)
 
-    def test_get_recipe_detail(self):
+    def test_get_recipe_detail_full(self):
         create_response = self.client.post("/api/recipes/", json={
             "title": "Борщ",
             "cooking_time": 60,
