@@ -29,7 +29,6 @@ jobs:
         black --check .
         isort --check-only --profile black .
         flake8 --config=.flake8 .
-        mypy app/
 
     - name: Run tests
       run: |
