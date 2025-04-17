@@ -1,8 +1,8 @@
 from typing import Annotated, List, Type
 
-from database import get_session
+from app.database import get_session
 from fastapi import APIRouter, Depends, HTTPException
-from models import Recipe
+from app.models import Recipe
 from schemas import RecipeCreate, RecipeDetail, RecipeOut
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
