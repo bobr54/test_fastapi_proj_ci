@@ -6,5 +6,6 @@ flake8
 isort
 black
 mypy
+asyncio
 httpx
 aiosqlite
