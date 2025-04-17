@@ -13,6 +13,7 @@ class TestRecipes(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         """Set up the test client for all tests"""
+
         async def create_tables():
             async with engine.begin() as conn:
                 await conn.run_sync(Base.metadata.create_all)
