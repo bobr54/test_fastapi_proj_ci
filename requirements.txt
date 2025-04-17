@@ -7,3 +7,5 @@ isort
 black
 mypy
 asyncio
+httpx
+aiosqlite
